@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coordinator-backend"
+version = "0.1.0"
+description = "Backend service exposing Hilbert curve tiles over a REST API"
+authors = [{name = "Gabriel Cavalcante"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0,<1.0.0",
+    "uvicorn[standard]>=0.24.0,<1.0.0",
+    "hilbertcurve>=2.0.0,<3.0.0",
+    "pyproj>=3.4.0,<4.0.0",
+]
+
+[project.urls]
+Homepage = "https://example.com"
